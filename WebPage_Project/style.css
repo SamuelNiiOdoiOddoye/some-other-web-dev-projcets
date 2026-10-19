@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Drift__';
+    src: url(font/Drift___.ttf);
+}    
+
+@font-face {
+    font-family: 'Alba__';
+    src: url(font/ALBA____.TTF);
+}
+
+body{
+    background-color: black;
+    color: coral;
+}
+
+.contact_us{
+    background-color: indianred;
+    color: aqua;
+    margin-top: 80%;
+    margin-left: 85%;
+    position: relative;
+}
+
+.Log-in{
+    background-color: rgb(221, 170, 103);
+    color: dimgrey;
+    margin-left: 5%;
+    margin-right: 70%;
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+
+.Log-in-attribute{
+    margin-left: 10%;
+    margin-right: 80%;
+
+}
+
+.Sign-up{
+    margin-left: 50%;
+    margin-right: 10;
+    margin-bottom: 80%;
+    margin-top: 5%;
+    color: dimgrey;
+    background-color: coral;
+}
+
+.Sign-up-attribute{
+
+}

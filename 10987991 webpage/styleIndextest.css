@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+        background-image: url(3.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+
+}
+
+.wrapper {
+    width: 860px;
+    margin: 0 auto;
+}
+
+.wrapper ul{
+    list-style: none;
+}

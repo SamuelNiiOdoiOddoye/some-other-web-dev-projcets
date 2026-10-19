@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iTelix_Home_Page</title>
+
+    <!-- links to cssfile -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--This is the code for the navigation bar-->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <!-- index html file-->
+            <li class="nav-item">
+                <a href="./index.html"><img src="./icons/home.png" alt="Go To Home Page"></a>
+            </li>
+
+            <!-- assistance html file-->
+            <li>
+                <a href="./assistance.html">Assistance</a>
+            </li>
+
+            <!-- accessories html file -->
+            <li>
+                <a href="./accessories.html">Accessories</a>
+            </li>
+
+            <!-- search icon -->
+            <li class="nav-item">
+                <a href="#"><img src="./icons/search.png" alt="Search The Website"></a>
+            </li>
+
+            <!-- cart icon -->
+            <li class="nav-item" id="cart-icon">
+                <a href="#"><img src="./icons/cart.png" alt="View Cart and Checkout Options"></a>
+                <ul class="dropdown">
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </ul>
+            </li>
+
+            <!-- user icon -->
+            <li class="nav-item" id="account-icon">
+                <a href="#"><img src="./icons/accountsettings.png" alt="Account Settings"></a>
+                <ul class="dropdown">
+                    <li>Vendor Account Management</li>
+                    <li>Customer Account Management</li>
+                    <li>Become a Vendor </li>
+                    <li>Become a customer</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This is the code for the hero section-->
+    <div class="hero-section">
+        <div class="hero-section-header">
+            Welcome to iTelix
+        </div>
+        <p class="custom-pre">
+            Your one-stop shop for all your tech needs. <br>
+            We buy, We sell, We trade.
+        </p>
+    </div>
+
+    <!--This Is The Section For The Featured Products-->
+    <div class="featured-products-section">
+        <!--This is the code for the scrolling banner with the styling also used-->
+        <div class="scrolling-banner">
+            <div class="scrolling-text">
+                •🔥• Featured Products •🔥• Featured Products •🔥• Featured Products •🔥•Featured Products •🔥•
+            </div>
+        </div>
+
+        <!--This is the code for the slideshow in the featured products category on the website-->
+        <div class="featured-products-category">
+            <!--This is the code for the slideshow-->
+            <div class="slideshow-container featured-slideshow">
+
+                <!--Slide 1 : Samsung s23 Ultra pic-->
+                <div class="slide active">
+                    <img src="./pictures/android_phone_pictures/samsungs23ultra.jpeg" alt="Samsung s23 Ultra">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Samsung Galaxy S23 Ultra
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $439
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Macbookpro m1 pic1 slide-->
+                <div class="slide">
+                    <img src="./pictures/macbook_pictures/macbookpro_m1_pic1.jpg" alt="macbook pro m1 pic 1">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Macbook Pro M1
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $998
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 3: Macbookpro m1 pic2 slide-->
+                <div class="slide">
+                    <img src="./pictures/macbook_pictures/macbookpro_m1_pic2.jpg" alt="macbook pro m1 pic 2">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Macbook Pro M1 Pro
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$2479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $2239
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 4: Macbookpro m1 pic7 slide-->
+                <div class="slide">
+                    <img src="./pictures/macbook_pictures/macbookpro_m1_pic7.jpg" alt="macbook pro m1 pic 7">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Macbook Pro M1 Max
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$3479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $2439
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 5: Samsung Fold 6 pic slide-->
+                <div class="slide">
+                    <img src="./pictures/android_phone_pictures/samsungfold6.jpeg" alt="Samsung Fold 6">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Samsung Fold 6
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$779</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $639
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 6: Samsung flip 3 pic slide-->
+                <div class="slide">
+                    <img src="./pictures/android_phone_pictures/samsungflip3.jpeg" alt="Samsung Flip 3">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Samsung Flip 3
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$879</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $739
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 7: Samsung s9 ultra tablet-->
+                <div class="slide">
+                    <img src="./pictures/android_tablet/s9ultratablet.jpeg" alt="Samsung s9 ultra tablet">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Samsung Galaxy S9 Ultra Tablet
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$979</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $739
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 8: 13 inch ipad pic-->
+                <div class="slide">
+                    <img src="./pictures/ipad_pictures/13inchipad.jpeg" alt="13 inch ipad">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            13 inch iPad
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1379</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $1239
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 9: iphone 17 line up pic-->
+                <div class="slide">
+                    <img src="./pictures/iphone_pictures/iphone17lineup.png" alt="iphone 17 line up">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            iPhone 17 Line Up
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1700</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $1650
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 10: iphone 16 pro max pic-->
+                <div class="slide">
+                    <img src="./pictures/iphone_pictures/iphone16promax.jpeg" alt="iPhone 16 Pro Max">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            iPhone 16 Pro Max
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1100</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $979
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 11: alienware laptop pic-->
+                <div class="slide">
+                    <img src="./pictures/laptop_pictures/alienwarelaptop.jpeg" alt="alienware laptop">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Alienware Laptop
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1679</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $1584
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 12: Macbook pro pic-->
+                <div class="slide">
+                    <img src="./pictures/macbook_pictures/macbookpropics.jpeg" alt="macbook pro image">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Macbook Pro
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $439
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slideshow Dots-->
+                <div class="slideshow-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is the category section-->
+    <div class="categories-section">
+        <!--iphone category-->
+        <div class="category">
+            <a href="./iphone_page.html">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/iphone_pictures/iphone11pics.jpeg" alt="iPhone 11">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_pictures/iphone13promaxpics.jpeg" alt="iPhone 13 Pro Max">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_pictures/iphone15.jpeg" alt="iPhone 15">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_pictures/iphone15promax.jpeg" alt="iPhone 15 Pro Max">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_pictures/iphone16promax.jpeg" alt="iPhone 16 Pro Max">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_pictures/iphone17lineup.png" alt="iphone 17 line up">
+                    </div>
+
+                    <!--Slideshow Dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>iPhones</p>
+            </a>
+        </div>
+
+        <!--android category-->
+        <div class="category">
+            <a href="./android_phones.php">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/android_phone_pictures/samsungs23ultra.jpeg" alt="samsung s23 ultra">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_phone_pictures/samsungs23fe.jpeg" alt="samsung s23 fe">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_phone_pictures/samsungfold6.jpeg" alt="samsung fold 6">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_phone_pictures/samsungflip3.jpeg" alt="samsung flip 3">
+                    </div>
+
+                    <!--Slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Android Phones</p>
+            </a>
+        </div>
+
+        <!--laptop category-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/laptop_pictures/macbookpropics.jpeg" alt="macbook pro image">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/laptop_pictures/alienwarelaptop.jpeg" alt="alienware laptop">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/laptop_pictures/lenovolaptop.jpeg" alt="lenovo laptop">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/laptop_pictures/ROGlaptop.jpeg" alt="ROG laptop">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Laptops</p>
+            </a>
+        </div>
+
+        <!--tablet category-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/ipad_pictures/ipadpics.jpeg" alt="ipad picture">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_tablet/s7ultratablet.jpeg" alt="s7 ultra tablet">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/ipad_pictures/13inchipad.jpeg" alt="13 inch ipad">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_tablet/s9ultratablet.jpeg" alt="s9 ultra tablet">
+                    </div>
+
+                    <!--Slideshow Dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Tablets</p>
+            </a>
+        </div>
+    </div>
+
+    <!--This is the code for the footer section-->
+    <footer class="footer">
+        <h2 class="footer-header">Your Trusted Tech Marketplace</h2>
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-header">About us</p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+
+            <div class="footer-center">
+                <p class="footer-header">Contact:</p>
+                <p>
+                    Phone : +233 242 100 866 <br>
+                    E-mail : samuel.oddoye@icloud.com
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-header">Follow Us:</p>
+                <p>
+                    <a href="./pictures/contact_me_whatsapp.jpeg">Whatsapp</a> |
+                    <a href="https://x.com/oddoye_samuel">Twitter</a> |
+                    <a href="https://www.instagram.com/nii.odoi.oddoye/">Instagram</a> |
+                    <a href="https://snapchat.com/t/Coo4vIsE">Snapchat</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./slideshow.js"></script>
+</body>
+
+</html>

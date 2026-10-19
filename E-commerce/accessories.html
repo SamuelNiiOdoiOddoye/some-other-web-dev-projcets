@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        iTelix_Accessories
+    </title>
+
+    <!-- links to cssfile -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--This is the code for the navigation bar-->
+    <nav class="navbar">
+        <ul class="nav-links">
+
+            <!-- home icon -->
+            <li class="nav-item">
+                <a href="./index.html"><img src="icons/home.png" alt="Home"></a>
+            </li>
+
+            <!-- assistance html file -->
+            <li>
+                <a href="./assistance.html">Assistance</a>
+            </li>
+
+            <!-- accessories html file -->
+            <li>
+                <a href="./accessories.html">Accessories</a>
+            </li>
+
+            <!-- search icon -->
+            <li class="nav-item">
+                <a href="#"> <img src="icons\search.png" alt="Search"> </a>
+            </li>
+
+            <!-- cart icon -->
+            <li class="nav-item">
+                <a href="#"> <img src="icons\cart.png" alt="Cart"> </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">View Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">Checkout</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- user icon -->
+            <li class="nav-item" id="account-icon">
+                <a href="#"><img src="./icons/accountsettings.png" alt="Account Settings"></a>
+                <ul class="dropdown">
+                    <li>Vendor Account Management</li>
+                    <li>Customer Account Management</li>
+                    <li>Become a Vendor </li>
+                    <li>Become a customer</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This Is The Section For The Featured Products-->
+    <div class="featured-products-section">
+        <!--This is the code for the scrolling banner with the styling also used-->
+        <div class="scrolling-banner">
+            <div class="scrolling-text">
+                •🔥• Featured Products •🔥• Featured Products •🔥• Featured Products •🔥•Featured Products •🔥•
+            </div>
+        </div>
+
+        <!--This is the code for the slideshow in the featured products category on the website-->
+        <div class="featured-products-category">
+            <!--This is the code for the slideshow-->
+            <div class="slideshow-container featured-slideshow">
+
+                <!--Slide 1 : Desk Stand Slide-->
+                <div class="slide active">
+                    <img src="./pictures/desk_stand.png" alt="Desk Stand">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Desk Stand
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$50</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $30
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Car Phone Holder Slide-->
+                <div class="slide">
+                    <img src="./pictures/car_phone_holder.png" alt="Car Phone Holder">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Car Phone Holder
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>30</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $15
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 3: External Storage Solutions Slide-->
+                <div class="slide">
+                    <img src="./pictures/external_ssd.png" alt="External Storage Solutions">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            External Storage Solutions
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$2000</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $1999
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 4: Electronics Cleaning Kit Slide-->
+                <div class="slide">
+                    <img src="./pictures/electronics_cleaning_kit.png" alt="Electronics Cleaning Kit">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Electronics Cleaning Kit
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$100</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $70
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 5: Cables & Adapters Slide-->
+                <div class="slide">
+                    <img src="./pictures/cables_and_adapters.png" alt="Cables and Adapters">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Cables and Adapters
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$350</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $300
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 6: Camera Lenses Slide-->
+                <div class="slide">
+                    <img src="./pictures/camera_lenses.png" alt="Camera Lenses">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Camera Lenses
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$879</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $739
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slide 7: Camera Mount Slide-->
+                <div class="slide">
+                    <img src="./pictures/camera_mount.png" alt="Camera Mount">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Camera Mount
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$600</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $550
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 8: Keyboard & Mouse Combo Slide-->
+                <div class="slide">
+                    <img src="./pictures/keyboard_mouse_combo.png" alt="Keyboard & Mouse Combo">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Keyboard & Mouse Combo
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$90</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $70
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 9: Controller Accessories Slide-->
+                <div class="slide">
+                    <img src="./pictures/controller_accessories.png" alt="Controller Accessories">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Controller Accessories
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$120</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $100
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 10: IEM Headphones Slide-->
+                <div class="slide">
+                    <img src="./pictures/IEM_headphones.png" alt="IEM Headphones">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            IEM Headphones
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$1100</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $979
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 11: Laptop Sleeve Slide-->
+                <div class="slide">
+                    <img src="./pictures/laptop_sleeve.png" alt="Laptop Sleeve">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Laptop Sleeve
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$50</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $45
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 12: Racing Wheel Slide-->
+                <div class="slide">
+                    <img src="./pictures/racing_wheel.png" alt="Racing Wheel">
+                    <div class="product-info">
+                        <h3 class="product-title">
+                            Racing Wheel
+                        </h3>
+                        <div class="price-container">
+                            <p class="list-price text-danger">
+                                List Price: <s>$479</s>
+                            </p>
+                            <p class="our-price">
+                                Our Price: $439
+                            </p>
+                        </div>
+                        <a href="#" class="btn-view-product">
+                            View Product Details
+                        </a>
+                    </div>
+                </div>
+
+                <!--Slideshow Dots-->
+                <div class="slideshow-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is the category section first part-->
+    <div class="categories-section">
+
+        <!--Smartphone & Tablet Accessories-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/case/android_phone/androidphonecase.jpeg" alt="android phone case">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/screen_protector/matteprivacyscreenprotector.jpeg"
+                            alt="matte privacy screen protector">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/stands/laptopstand1.jpeg" alt="device stand type 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/case/ipad_case/ipad_magic_keyboard_case.jpeg"
+                            alt="iad magic keyboard case">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/case/iphone_case/Iphonephonecase.jpeg" alt="iPhone case">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/case/ipad_case/ipad_case.jpeg" alt="ipad case">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/android_charger.png" alt="Android Charger">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/iphone_charger.png" alt="iPhone Charger">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/pop_socket_grip.png" alt="grip">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/car_phone_holder.png" alt="car phone mount">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/desk_stand.png" alt="desk stand">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/stylus.png" alt="stylus">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/selfie_stick.png" alt="selfie stick">
+                    </div>
+
+
+                    <!--Slideshow Dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Smartphone & Tablet Accessories</p>
+            </a>
+        </div>
+
+        <!--Laptop & Computer Accessories-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/stickers/devicestickers.jpeg" alt="device stickers">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/keyboard_mouse_combo.png" alt="Keyboard & Mouse Combo">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/graphics_drawing_tablet.png" alt="Drawing Tablet / Graphics Tablet">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/laptop_charger.png" alt="Laptop Charger">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/portable_monitor.png" alt="Portable Monitor">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/monitor_arm.png" alt="Monitor Arms">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/external_ssd.png" alt="External SSD">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/cables.png" alt="Cables">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/laptop_sleeve.png" alt="Laptop Sleeve">
+                    </div>
+
+                    <!--Slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Laptop & Computer Accessories</p>
+            </a>
+        </div>
+
+        <!--Audio & Headphone Specialties-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/over_ear_headphones.png" alt="Over-ear">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/in_ear_headphones.png" alt="In-ear">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/IEM_headphones.png" alt="IEM">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/audio_cables.png" alt="Audio Cables">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Audio & Headphone Specialties</p>
+            </a>
+        </div>
+
+        <!--Gaming Accessories-->
+        <div class="category">
+            <a href="#">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/wired_controller.png" alt="Wired Controller">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/pro_controller.png" alt="Pro Controller">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/racing_wheel.png" alt="Racing Wheel">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/controller_accessories.png" alt="Controller Accessories">
+                    </div>
+
+                    <!--Slideshow Dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Gaming Accessories</p>
+            </a>
+        </div>
+
+    </div>
+
+    <!--This is the category section second part-->
+    <div class="categories-section">
+
+        <!--Smart Home & Networking-->
+        <div class="category">
+            <a href="#" title="This is the link to smart home and networking accessories">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/wifi_extender_mesh.png" alt="Wifi Range Extenders / Mesh Systems">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/ethernet_switch.png" alt="Ethernet Switches">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/smart_plugs_&_Outlets.png" alt="Smart Plugs & Outlets">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/smart_sensors.png" alt="Smart Sensors">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Smart Home & Networking</p>
+            </a>
+        </div>
+
+        <!--Camera & Drone Accessories-->
+        <div class="category">
+            <a href="#" title="This is the link to camera and drone accessories">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/camera_lenses.png" alt="Lenses">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/camera_mount.png" alt="Pod mounts for cameras">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/camera_accessories.png" alt="Camera Accessories">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/drone_accessories.png" alt="Drone accessories">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Camera & Drone Accessories</p>
+            </a>
+        </div>
+
+        <!--General Essentials & Components-->
+        <div class="category">
+            <a href="#" title="This is the link to General Essentials & Components">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures/ups.png" alt="UPS">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/surge_protector.png" alt="Surge Protector">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/electronics_cleaning_kit.png"
+                            alt="Electronics Cleaning & Maintenance Kits">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/cables_and_adapters.png" alt="Cables & Adapters">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/external_ssd.png" alt="Storage Solutions">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>General Essentials & Components</p>
+            </a>
+        </div>
+
+        <!--Wearable Tech Accessories-->
+        <div class="category">
+            <a href="#" title="this is the link to wearable tech accessories">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="./pictures//apple watch.png" alt="apple watch">
+                    </div>
+                    <div class="slide">
+                        <img src="./pictures/vr goggles.png" alt="vr goggles">
+                    </div>
+
+                    <!--slideshow dots-->
+                    <div class="slideshow-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <p>Wearable Tech Accessories</p>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!--This is the code for the footer section-->
+    <footer class="footer">
+
+        <h2 class="footer-header">
+            Your Trusted Tech Marketplace
+        </h2>
+
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <p class="footer-header">
+                    About us
+                </p>
+                <p>
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <p class="footer-header">
+                    Contact:
+                </p>
+                <p>
+                    Phone : +233 242 100 866 <br>
+                    E-mail : samuel.oddoye@icloud.com
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-header">
+                    Follow Us:
+                </p>
+                <p>
+                    <a href="./pictures/contact_me_whatsapp.jpeg">Whatsapp</a> | <a
+                        href="https://x.com/oddoye_samuel">Twitter</a> |
+                    <a href="https://www.instagram.com/nii.odoi.oddoye/">Instagram</a> |
+                    <a href="https://snapchat.com/t/Coo4vIsE">Snapchat</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="./slideshow.js"></script>
+</body>
+
+</html>

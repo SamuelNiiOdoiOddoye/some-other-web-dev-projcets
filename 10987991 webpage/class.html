@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+
+        body{margin: 0;}
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position : fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: turquoise;
+        }
+
+        .active {
+            background-color: steelblue;
+        }
+
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+    <link rel="stylesheet" href="styleClass.css">
+
+    <meta http-equiv = "refresh" content="120">
+
+</head>
+<body>
+
+    <ul>
+
+        <li>
+
+              <a href="Home.html">
+                    Home
+             </a>
+
+        </li>
+
+        <li>
+
+            <a class="active" href="class.html">
+                Class
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="contact.html" >
+                Contact
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </li>
+
+    </ul> 
+
+    <div style="padding: 20px; margin-top:30px; background-color:lightgrey; height:1500px;">
+
+        <p class="welcome">
+            Welcome to the website
+        </p>
+
+   
+
+        
+        <form class="form">
+            
+            <fieldset width:60px;>
+                <legend>Log in </legend>
+            <br>    Type in Your Username: <input type="text" name="User_ID" required >          <br><br>
+            <br>    Type in Your Password: <input type="password" name="User_ID" required >        <br><br>
+            
+            <a href="LOGGED.html"><input type="submit" value="Log-In"> <br> </a>          
+
+        </fieldset>
+
+        </form>
+
+        <a href="Sign-up.html"> <input type="submit" value="Sign-Up">  <br> </a>
+ 
+    </div>
+   
+      
+</body>
+</html>

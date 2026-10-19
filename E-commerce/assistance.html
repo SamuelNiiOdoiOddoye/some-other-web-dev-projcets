@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        iTelix_Contact_Us
+    </title>
+
+    <!-- links to cssfile -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--This is the code for the navigation bar-->
+    <nav class="navbar">
+        <!-- home icon -->
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="./index.html"><img src="icons/home.png" alt="Home"></a>
+            </li>
+
+            <!-- assistance html file -->
+            <li>
+                <a href="./assistance.html">Assistance</a>
+            </li>
+
+            <!-- accessories html file -->
+            <li>
+                <a href="./accessories.html">Accessories</a>
+            </li>
+
+            <!-- search icon -->
+            <li class="nav-item">
+                <a href="#"> <img src="icons\search.png" alt="Search"> </a>
+            </li>
+
+            <!-- cart icon -->
+            <li class="nav-item">
+                <a href="#"> <img src="icons\cart.png" alt="Cart"> </a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="#">View Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">Checkout</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- user icon -->
+            <li class="nav-item" id="account-icon">
+                <a href="#"><img src="./icons/accountsettings.png" alt="Account Settings"></a>
+                <ul class="dropdown">
+                    <li>Vendor Account Management</li>
+                    <li>Customer Account Management</li>
+                    <li>Become a Vendor </li>
+                    <li>Become a customer</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This is the code for the category images-->
+    <div class="categories-section">
+
+        <!-- Mascot Image Section-->
+        <div class="card-mascot-image">
+            <img src="./pictures/mascot.jpg" alt="our mascot image">
+            <p> iTelix Device Store</p>
+        </div>
+
+        <!-- Orders & Purchases Section-->
+        <div class="category">
+            <a href="#">
+                <p>Orders & Purchases</p>
+                <img src="./icons/orders&Purchases.png" alt="Orders & Purchases icon">
+            </a>
+        </div>
+
+        <!-- My Account Section-->
+        <div class="category">
+            <a href="#">
+                <p>My Account</p>
+                <img src="./icons/accountsettings.png" alt="Account Settings icon">
+            </a>
+        </div>
+
+        <!-- Product Repair & Support Section-->
+        <div class="category">
+            <a href="#">
+                <p>Product Repair & Support</p>
+                <img src="./icons/ProductRepair&Support.png" alt="Product Repair & Support icon">
+            </a>
+        </div>
+
+    </div>
+
+    <div id="assistance form">
+        <h2>Contact Support</h2>
+        <textarea id="problem" placeholder="Type your problem here..." rows="5"></textarea>
+        <button onclick="sendProblem()" class="button">Submit</button>
+        <div id="feedback" class="feedback">✅ Your request has been sent!</div>
+    </div>
+
+    <!--This is the code for the footer section-->
+    <footer class="footer">
+
+        <h2 class="footer-header">
+            Your Trusted Tech Marketplace
+        </h2>
+
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <p class="footer-header">
+                    About us
+                </p>
+                <p>
+                    <a href="#">
+                        Terms & Conditions
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <p class="footer-header">
+                    Contact:
+                </p>
+                <p>
+                    Phone : +233 242 100 866 <br>
+                    E-mail : addoyesamuel@gmail.com
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <p class="footer-header">
+                    Follow Us:
+                </p>
+                <p>
+                    <a href="./pictures/contact_me_whatsapp.jpeg">Whatsapp</a> | <a
+                        href="https://x.com/oddoye_samuel">Twitter</a> |
+                    <a href="https://www.instagram.com/nii.odoi.oddoye/">Instagram</a> |
+                    <a href="https://snapchat.com/t/Coo4vIsE">Snapchat</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./slideshow.js"></script>
+    <script>
+        function sendProblem() {
+            // Simulate sending to support
+            document.getElementById("feedback").style.display = "block";
+            document.getElementById("problem").value = "";
+        }
+
+    </script>
+</body>
+
+</html>

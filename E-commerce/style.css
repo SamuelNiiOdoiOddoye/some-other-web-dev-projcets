@@ -1,0 +1,1230 @@
+/* Declaring fonts */
+@font-face {
+    font-family: "Inter Regular";
+    src: url("./fonts/inter/static/Inter_28pt-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("./fonts/inter/static/Inter_28pt-ExtraBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("./fonts/Montserrat/static/Montserrat-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("./fonts/Montserrat/static/Montserrat-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Sans Regular";
+    src: url("./fonts/Inria Sans/InriaSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Sans Bold";
+    src: url("./fonts/Inria Sans/InriaSans-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Indie Flower Regular";
+    src: url("./fonts/Indie Flower/IndieFlower-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General */
+body {
+    background-color: #585757;
+    font-family: "Inter Regular";
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #D9D9D9;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter Regular";
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    font-family: "Inter Regular";
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links li {
+    padding: 10px 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.nav-links img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Dropdown */
+.dropdown {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #968787;
+    display: none;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.dropdown li {
+    width: auto;
+    text-align: center;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    background-color: #968787;
+    text-decoration: none;
+    display: block;
+    color: black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.dropdown a:hover {
+    background-color: #a89595;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #726b6b;
+    font-family: "Indie Flower Regular";
+    text-align: center;
+    padding: 20px 0;
+}
+
+.custom-pre {
+    background-color: #726b6b;
+    font-size: small;
+    font-family: "Indie Flower Regular";
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.hero-section-header {
+    background-color: #726b6b;
+    font-family: "Inria Sans Regular";
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: inherit;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Featured Products Section */
+
+/* Scrolling Banner */
+.scrolling-banner {
+    background-color: #fdab74;
+    color: black;
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    font-family: "Inter Regular";
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollTextLeftToRight 25s linear infinite;
+    font-family: "Indie Flower Regular";
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scrollTextLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.scrolling-banner:hover .scrolling-text {
+    animation-play-state: paused;
+}
+
+/* Featured Products Container */
+.featured-products-section {
+    font-family: "Indie Flower Regular";
+    background-color: #fdab74;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    box-sizing: border-box;
+}
+
+.featured-products-category {
+    align-items: center;
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-products-category:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Featured Products Slideshow - FIXED */
+.featured-products-category .slideshow-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Featured Products Slides - FIXED with proper flex layout */
+.featured-products-category .slideshow-container .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    flex-direction: column;
+}
+
+.featured-products-category .slideshow-container .slide.active {
+    display: flex !important;
+    /* FIXED: Added !important */
+    opacity: 1;
+}
+
+.featured-products-category .slideshow-container .slide img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    background-color: #f8f8f8;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Product Info Styles - FIXED */
+.product-info {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    padding: 20px;
+    padding-bottom: 40px;
+    /* Extra space for dots */
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* FIXED: Removed duplicate position property */
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.product-title {
+    font-family: "Inter Bold";
+    font-size: 1.4em;
+    color: #333;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.price-container {
+    margin-bottom: 15px;
+}
+
+.list-price {
+    font-family: "Inter Regular";
+    font-size: 0.9em;
+    margin: 0;
+    color: #999;
+}
+
+.our-price {
+    font-family: "Inter Bold";
+    font-size: 1.2em;
+    color: #2c5aa0;
+    margin: 5px 0 0 0;
+}
+
+.price-amount {
+    color: #fdab74;
+    font-size: 1.3em;
+}
+
+.btn-view-product {
+    background: linear-gradient(135deg, #fdab74 0%, #ec8038 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Inter Bold";
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(253, 171, 116, 0.3);
+    cursor: pointer;
+    position: relative;
+    z-index: 15;
+    /* Higher than product info */
+}
+
+.btn-view-product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(253, 171, 116, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* Slideshow Dots - FIXED */
+.featured-products-category .slideshow-dots {
+    position: absolute;
+    bottom: 42%;
+    /* Position above product info */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 5;
+    /* Below product info but above image */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+
+.featured-products-category .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.featured-products-category .dot.active {
+    background-color: #fdab74;
+    border-color: #ffffff;
+    transform: scale(1.2);
+}
+
+.featured-products-category .dot:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Category Section */
+.categories-section,
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    background-color: #726b6b;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category,
+.card,
+.card-mascot-image {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 280px;
+    margin: 10px;
+    flex: 0 1 auto;
+    max-width: 350px;
+    min-width: 250px;
+}
+
+.card-mascot-image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Specific rule for centering the third card beneath the top 2 */
+.cards-container .card:nth-child(3) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-container .card:nth-child(2)>* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ADD HOVER for all item types */
+.category:hover,
+.card:hover,
+.card-mascot-image:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.category p,
+.card p,
+.card-mascot-image p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Inria Sans Regular";
+    margin-bottom: 0;
+}
+
+/* Category Slideshow */
+.categories-section .slideshow-container,
+.cards-container .slideshow-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.categories-section .slide,
+.cards-container .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.categories-section .slide.active,
+.cards-container .slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.categories-section .slide img,
+.cards-container .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categories-section .slideshow-dots,
+.cards-container .slideshow-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.categories-section .dot,
+.cards-container .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.categories-section .dot.active,
+.cards-container .dot.active {
+    background-color: #FFFFFF;
+}
+
+.categories-section .dot:hover,
+.cards-container .dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #d9d9d9;
+    font-family: "Inria Sans Regular";
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-header {
+    font-family: "Inria Sans Regular";
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inria Sans Regular";
+    width: 90%;
+    max-width: 1000px;
+    margin-bottom: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right,
+.footer-center {
+    background-color: #D9D9D9;
+    font-family: "Inria Sans Regular";
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Some other conflicting declarations might go here */
+/* 2-per-row layout with the 3rd card centered beneath */
+.cards-container {
+    /* override previous display:flex for this container only */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    justify-items: center;
+    /* centers items inside each grid cell */
+    align-items: start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* make each .card inside .cards-container have the same fixed card width */
+.cards-container>.card {
+    width: 280px;
+    /* matches your existing card width */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* force the 3rd card to span the whole row and center itself */
+.cards-container>.card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+
+/* Responsive adjustments for featured products */
+@media (max-width: 1024px) {
+    .featured-products-category {
+        width: 95%;
+        max-width: 900px;
+    }
+
+    .featured-products-category .slideshow-container {
+        height: 450px;
+    }
+
+    .product-title {
+        font-size: 1.2em;
+    }
+
+    .btn-view-product {
+        padding: 10px 20px;
+        font-size: 0.85em;
+    }
+
+    .featured-products-category .slideshow-dots {
+        bottom: 41%;
+        /* Adjusted for tablet */
+    }
+
+    .categories-section,
+    .cards-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        width: calc(50% - 30px);
+        min-width: 250px;
+        margin: 8px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .featured-products-category .slideshow-container {
+        height: 400px;
+    }
+
+    .featured-products-category .slideshow-container .slide img {
+        padding: 15px;
+    }
+
+    .product-info {
+        height: 45%;
+        padding: 15px;
+        padding-bottom: 35px;
+        /* Added responsive padding */
+    }
+
+    .product-title {
+        font-size: 1.1em;
+    }
+
+    .price-container {
+        margin-bottom: 10px;
+    }
+
+    .our-price {
+        font-size: 1.1em;
+    }
+
+    .featured-products-category {
+        padding: 20px;
+    }
+
+    .featured-products-category .slideshow-dots {
+        bottom: 40%;
+        /* Adjusted for tablet */
+        padding: 10px 15px;
+    }
+
+    .categories-section,
+    .cards-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        width: calc(50% - 30px);
+        min-width: 250px;
+        margin: 8px;
+    }
+
+    .hero-section-header {
+        font-size: 32px;
+        padding: 15px 10px;
+    }
+
+    .custom-pre {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-center {
+        min-width: 150px;
+        flex: 1;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .cards-container>.card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .cards-container>.card:nth-child(3) {
+        grid-column: auto;
+    }
+
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    .featured-products-category .slideshow-container {
+        height: 350px;
+    }
+
+    .featured-products-category .slideshow-container .slide img {
+        padding: 10px;
+    }
+
+    .product-info {
+        height: 50%;
+        padding: 12px;
+        padding-bottom: 30px;
+        /* Added responsive padding */
+    }
+
+    .product-title {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    .list-price {
+        font-size: 0.8em;
+    }
+
+    .our-price {
+        font-size: 1em;
+    }
+
+    .btn-view-product {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .featured-products-category {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .featured-products-category .slideshow-dots {
+        bottom: 38%;
+        /* Adjusted for mobile */
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .featured-products-category .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    .categories-section,
+    .cards-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 5px 0;
+        padding: 12px;
+    }
+
+    .hero-section-header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .custom-pre {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .nav-links li {
+        padding: 5px 8px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .nav-links img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-center {
+        text-align: center;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .categories-section .slideshow-container,
+    .cards-container .slideshow-container {
+        height: 180px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cards-container>.card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card-mascot-image img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .card-mascot-image {
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+
+}
+
+/* Styling for the assistance.html page */
+
+#assistance-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Inter Regular";
+}
+
+#assistance-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Inria Sans Bold";
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Inter Regular";
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Inter Bold";
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.button:hover {
+    background-color: #005a9e;
+}
+
+.feedback {
+    margin-top: 15px;
+    color: green;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width : 768px) {
+    #assistance-form {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    #assistance-form h2 {
+        font-size: 24px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #assistance-form {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    #assistance-form h2 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+}
+
+/* Very small phones (360px and below) */
+@media (max-width: 360px) {
+    .hero-section-header {
+        font-size: 20px;
+    }
+
+    .category p,
+    .card p,
+    .card-mascot-image p {
+        font-size: 14px;
+    }
+
+    .categories-section .slideshow-container,
+    .cards-container .slideshow-container {
+        height: 160px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 4px;
+    }
+
+    .nav-links img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .featured-products-category .slideshow-dots {
+        bottom: 37%;
+        /* Adjusted for very small screens */
+        padding: 6px 10px;
+    }
+
+    .featured-products-category .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+
+    .categories-section,
+    .cards-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* === MISSING RESPONSIVE RULES === */
+
+/* Desktop (992px and above) - FORCE 4 CATEGORIES IN ONE ROW */
+@media (min-width: 992px) {
+
+    .categories-section,
+    .cards-container {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        flex: 0 0 auto;
+        width: 280px;
+    }
+}
+
+/* Large screens (1200px and above) - ENSURE 4 IN A ROW */
+@media (min-width: 1200px) {
+
+    .categories-section,
+    .cards-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Tablets (768px to 991px) - 2 CATEGORIES PER ROW */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .categories-section,
+    .cards-container {
+        justify-content: center;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        width: calc(50% - 30px);
+        min-width: 250px;
+        margin: 15px;
+    }
+}
+
+/* Small tablets (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .categories-section,
+    .cards-container {
+        justify-content: center;
+    }
+
+    .category,
+    .card,
+    .card-mascot-image {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+/* === Centered 4-per-row categories grid (override) ===
+   Place this at the end of style.css so it overrides earlier .categories-section rules.
+   Adjust the 280px value if your card width differs. */
+
+.categories-section {
+    /* Use grid to get deterministic rows/columns and center the whole grid */
+    display: grid !important;
+    grid-template-columns: repeat(4, 280px);
+    /* 4 columns of fixed card width */
+    justify-content: center;
+    /* center the grid within the container */
+    gap: 32px;
+    /* spacing between cards */
+    padding: 40px 20px;
+    /* keep existing padding */
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* center the containing area */
+    background-color: #726b6b;
+    /* keep background from original */
+}
+
+/* Ensure each card sits centered in its grid cell and keeps the expected width */
+.categories-section>.category,
+.categories-section>.card,
+.categories-section>.card-mascot-image {
+    width: 280px;
+    /* same as grid column width */
+    max-width: 100%;
+    justify-self: center;
+    margin: 0;
+    /* remove extra margin that could affect centering */
+    box-sizing: border-box;
+}
+
+/* Responsive breakpoints */
+/* Large desktops: keep 4 columns */
+@media (min-width: 1300px) {
+    .categories-section {
+        grid-template-columns: repeat(4, 280px);
+    }
+}
+
+/* Desktop / large tablet: 3 columns */
+@media (min-width: 992px) and (max-width: 1299px) {
+    .categories-section {
+        grid-template-columns: repeat(3, 280px);
+    }
+}
+
+/* Tablets: 2 columns */
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories-section {
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
+/* Mobile: 1 column, stacked and centered */
+@media (max-width: 767px) {
+    .categories-section {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px 12px;
+    }
+
+    .categories-section>.category,
+    .categories-section>.card,
+    .categories-section>.card-mascot-image {
+        width: 100%;
+        max-width: 340px;
+        /* caps card width on small screens */
+    }
+}

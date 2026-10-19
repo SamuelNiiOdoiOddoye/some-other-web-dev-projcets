@@ -1,0 +1,37 @@
+/* font family declarations */
+@font-face {
+    font-family: "Inria Sans Regular";
+    src: url("./fonts/Inria Sans/InriaSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inria Sans Bold";
+    src: url("./fonts/Inria Sans/InriaSans-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Styling for the General Body */
+.body {
+    background-color: dimgray;
+    font-family: "Inria Sans Bold";
+}
+
+/* Styling for the forms background */
+.formBackground {
+    background-color: rgb(252, 120, 97);
+    padding: 10%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-family: "Inria Sans Regular";
+    font-size: 20px;
+
+}

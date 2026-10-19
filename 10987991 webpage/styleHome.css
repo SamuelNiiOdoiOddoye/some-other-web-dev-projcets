@@ -1,0 +1,17 @@
+
+
+.welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+    background-color: tomato;
+    font-size: 36px;
+    font-style: oblique;
+}
+
+.content{
+    color: whitesmoke;
+    background-color: steelblue;
+    font-size: 28px;
+    font-style: italic;
+
+}
